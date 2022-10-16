@@ -1,0 +1,82 @@
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: var(--maine-font), sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+.hat__container {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hat-nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hat__container {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .open-mobile-menu-button {
+    display: none;
+  }
+  .hat-nav-list {
+    display: flex;
+    gap: 20px;
+  }
+  .hat__container {
+    padding-top: 36px;
+    justify-content: flex-start;
+    gap: 55px;
+  }
+  .hat-nav-list__link {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2222222222;
+    color: var(--primary-text-color);
+  }
+}/*# sourceMappingURL=mine.css.map */

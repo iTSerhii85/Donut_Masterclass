@@ -5,29 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/mine.min.css" />
   </head>
   <body>
-    <header>
-      <div class="container"></div>
+    <!-- ! Шапка -->
+    <header class="hat">
+      <div class="container hat__container">
+        <picture class="heder-logo">
+          <source
+            srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+            media="(max-width:767px)"
+          />
+          <img src="./images/logo-mobile.png" alt="logo donut" />
+        </picture>
+        <ul class="list hat-nav-list">
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">About us</a>
+          </li>
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">Program</a>
+          </li>
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">Speakers</a>
+          </li>
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">Price</a>
+          </li>
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">Reviews</a>
+          </li>
+          <li class="hat-nav-list__item">
+            <a class="hat-nav-list__link link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <button class="open-mobile-menu-button" type="button">
+          <svg
+            class="open-mobile-menu-button_icon"
+            aria-label="open-mobile menu button"
+            width="30"
+            height="16"
+          >
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!--! Мобильное меню -->
       <div class="mobile-menu">
         <div class="container"></div>
       </div>
     </header>
+    <!--! Основной контент -->
     <main>
+      <!--! Герой -->
       <section>
         <div class="container"></div>
       </section>
+      <!--!  -->
       <section>
         <div class="container"></div>
       </section>
+      <!--!  -->
       <section>
         <div class="container"></div>
       </section>
     </main>
+    <!--! Подвал -->
     <footer>
       <div class="container"></div>
     </footer>
-
+    <!--!Скрипты -->
     <script src=""></script>
     <script src=""></script>
   </body>
