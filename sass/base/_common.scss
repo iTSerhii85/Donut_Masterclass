@@ -1,8 +1,8 @@
 body {
     background-color: var(--background-color);
-    color: var(--primary-text-color);
+    // color: var(--primary-text-color);
   
-    font-family: var(--maine-font), sans-serif;
+    font-family: 'Montserrat'
   }
   
 // !Сбросил точки в списках
@@ -23,4 +23,11 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+  // ! Шрифт для заголовков
+  .title {
+    font-family: Montserrat Alternates;
+    color: var(--title-text-color);
+    margin: 0;
   }

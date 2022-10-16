@@ -1,0 +1,124 @@
+.background {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: tomato;
+    height: 312px;
+    background-image: url(../images/hero/glazed-donuts-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: padding-box;
+
+    position: relative;
+  }
+
+  .hero-container {
+    padding-top: 86px;
+    text-align: center;
+  }
+
+  .hero__main-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: (34/28);
+    letter-spacing: -0.03em;
+
+    margin-bottom: 18px;
+  }
+
+  .hero__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: (20/16);
+
+    margin-bottom: 28px;
+  }
+
+  .social-list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
+  screen and (min-resolution: 192dpi) and (max-width: 767px), 
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .background {
+      background-image: url(../images/hero/glazed-donuts-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .background {
+        height: 345px;
+      background-image: url(../images/hero/glazed-donuts-tablet.jpg);
+    }
+
+    .hero-container {
+        padding-top: 98px;
+        text-align:start;
+    }
+
+    .hero__main-title {
+        font-size: 30px;
+        line-height: (30/37);
+        letter-spacing: normal;
+
+        width: 319px;
+
+        margin-bottom: 10px;
+      }
+
+      .hero__title {
+        margin-bottom: 24px;
+      }
+
+      .social-list {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content:flex-start;
+        margin-top: 28px;
+      }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), 
+  screen and (min-resolution: 192dpi) and (min-width: 768px), 
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .background {
+      background-image: url(../images/hero/glazed-donuts-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .background {
+        height: 556px;
+      background-image: url(../images/hero/glazed-donuts.jpg);
+    }
+
+    .hero-container {
+        padding-top: 164px;
+    }
+
+    .hero__main-title {
+        font-size: 60px;
+        line-height: (65/60);
+
+        width: 757px;
+
+        margin-bottom: 27px;
+      }
+
+      .hero__title {
+        line-height: (29/24);
+      }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), 
+  screen and (min-resolution: 192dpi) and (min-width: 1200px), 
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .background {
+      background-image: url(../images/hero/glazed-donuts@2x.jpg);
+    }
+  }

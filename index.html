@@ -56,9 +56,9 @@
             <a class="hat-nav-list__link link" href="#">Contacts</a>
           </li>
         </ul>
-        <button class="open-mobile-menu-button" type="button">
+        <button class="open-mobile-menu-button" type="button" data-menu-open>
           <svg
-            class="open-mobile-menu-button_icon"
+            class="open-mobile-menu-button__icon"
             aria-label="open-mobile menu button"
             width="30"
             height="16"
@@ -68,19 +68,133 @@
         </button>
       </div>
       <!--! Мобильное меню -->
-      <div class="mobile-menu">
-        <div class="container"></div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <div class="mobile-menu-wrapper">
+              <picture class="heder-logo">
+                <source
+                  srcset="
+                    ./images/logo-tablet.png    1x,
+                    ./images/logo-tablet@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/logo-mobile.png    1x,
+                    ./images/logo-mobile@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./images/logo-mobile.png" alt="logo donut" />
+              </picture>
+              <button class="mobile-menu-close-button" data-menu-close>
+                <svg
+                  class="mobile-menu-close-button__icon"
+                  aria-label="close mobile menu button"
+                  width="19"
+                  height="19"
+                >
+                  <use href="./images/symbol-defs.svg#icon-X"></use>
+                </svg>
+              </button>
+          </div>
+          <ul class="list mobile-menu-nav-list">
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">About us</a>
+            </li>
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">Program</a>
+            </li>
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">Speaker</a>
+            </li>
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">Price</a>
+            </li>
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">Reviws</a>
+            </li>
+            <li class="mobile-menu-nav-list__item">
+              <a class="link mobile-menu-nav-list__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--! Основной контент -->
     <main>
       <!--! Герой -->
-      <section>
-        <div class="container"></div>
+      <section class="hero background">
+        <div class="container hero-container">
+          <h1 class="title hero__main-title">
+            Donut Masterclass with the Donut King
+          </h1>
+          <h2 class="title hero__title">Hosted by Eva Green</h2>
+          <button class="button hero-button" type="button">Register</button>
+          <ul class="list social-list">
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <svg
+                  class="social-list__icon"
+                  aria-label="icon twitter"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/symbol-defs.svg#icon-Twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <svg
+                  class="social-list__icon"
+                  aria-label="icon twitter"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/symbol-defs.svg#icon-Instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <svg
+                  class="social-list__icon"
+                  aria-label="icon twitter"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/symbol-defs.svg#icon-Facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--!  -->
-      <section>
-        <div class="container"></div>
+      <section class="about-us">
+        <div class="container about-us-container">
+            <picture class="about-us__img">
+                <source
+            srcset="./images/about_us/man-baker.jpg 1x, ./images/about_us/man-baker@2x.jpg 2x"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./images/about_us/man-baker-tablet.jpg 1x, ./images/about_us/man-baker-tablet@2x.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/about_us/man-baker-mobile.jpg 1x, ./images/about_us/man-baker-mobile@2x.jpg 2x"
+            media="(max-width:767px)"
+          />
+                <img src="./images/about_us/man-baker-mobile.jpg/" alt="">
+            </picture>
+            <div class="about-us__text-wrapper">
+                <h2 class="title about-us__title"></h2>
+                <p class="about-us__text"></p>
+            </div>
+        </div>
       </section>
       <!--!  -->
       <section>
@@ -92,7 +206,7 @@
       <div class="container"></div>
     </footer>
     <!--!Скрипты -->
-    <script src=""></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src=""></script>
   </body>
 </html>
