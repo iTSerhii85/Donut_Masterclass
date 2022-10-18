@@ -7,6 +7,10 @@
   --button-font: roboto;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .open-mobile-menu-button {
   border: none;
   background-color: inherit;
@@ -59,6 +63,7 @@ img {
   font-family: Montserrat Alternates;
   color: var(--title-text-color);
   margin: 0;
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
 }
 
 .container {
@@ -258,6 +263,7 @@ img {
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 28px;
+  box-shadow: 10px 12px 12px -4px rgba(56, 50, 50, 0.75);
 }
 
 @media screen and (min-width: 768px) {
@@ -329,6 +335,7 @@ img {
   background-image: linear-gradient(0.1deg, #000000 -10.83%, rgba(156, 156, 156, 0) 88.01%), url(../images/program/bg1.jpg);
   margin-top: 24px;
   margin-bottom: 28px;
+  box-shadow: 10px 12px 12px -4px rgba(56, 50, 50, 0.75);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -338,6 +345,7 @@ img {
 }
 .img-2 {
   background-image: linear-gradient(0.1deg, #000000 -10.83%, rgba(156, 156, 156, 0) 88.01%), url(../images/program/bg2.jpg);
+  box-shadow: 10px 12px 12px -4px rgba(56, 50, 50, 0.75);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -349,6 +357,7 @@ img {
   background-image: linear-gradient(0.1deg, #000000 -10.83%, rgba(156, 156, 156, 0) 88.01%), url(../images/program/bg3.jpg);
   margin-top: 44px;
   margin-bottom: 28px;
+  box-shadow: 10px 12px 12px -4px rgba(56, 50, 50, 0.75);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -358,6 +367,7 @@ img {
 }
 .img-4 {
   background-image: linear-gradient(0.1deg, #000000 -10.83%, rgba(156, 156, 156, 0) 88.01%), url(../images/program/bg4.jpg);
+  box-shadow: 10px 12px 12px -4px rgba(56, 50, 50, 0.75);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -482,6 +492,10 @@ img {
 }
 
 .speakers__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2083333333;
+  color: var(--primary-text-color);
   text-align: center;
   margin-bottom: 16px;
 }
@@ -489,6 +503,7 @@ img {
 .speakers__img {
   display: block;
   width: 130px;
+  margin-bottom: 12px;
 }
 
 .speakers__list-item {
@@ -502,6 +517,71 @@ img {
   justify-content: center;
 }
 
+.name {
+  font-weight: 600;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.position {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .speakers__container {
+    padding-top: 44px;
+  }
+  .speakers__title {
+    font-size: 32px;
+    line-height: 1.21875;
+    margin-bottom: 20px;
+  }
+  .speakers__img {
+    width: 152px;
+    margin-bottom: 20px;
+  }
+  .speakers__list-item {
+    width: 152px;
+  }
+  .speakers__list {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  .name {
+    font-size: 18px;
+    line-height: 1.2222222222;
+    margin-bottom: 20px;
+  }
+  .position {
+    font-size: 14px;
+    line-height: 1.2142857143;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speakers__container {
+    padding-top: 100px;
+  }
+  .speakers__title {
+    margin-bottom: 5px;
+  }
+  .speakers__img {
+    width: 288px;
+  }
+  .speakers__list-item {
+    width: 288px;
+  }
+  .position {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
 .mobile-menu {
   position: fixed;
   top: 0;
