@@ -477,6 +477,31 @@ img {
     align-items: center;
   }
 }
+.speakers__container {
+  padding-top: 35px;
+}
+
+.speakers__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.speakers__img {
+  display: block;
+  width: 130px;
+}
+
+.speakers__list-item {
+  width: 130px;
+}
+
+.speakers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
